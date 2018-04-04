@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: #dedede;
+}
+
+header{
+    background: brown;
+    
+    
+    box-shadow: 1px 1px 5px black;
+    
+    max-height: 80px;
+  
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1.3rem;
+    }
+.logo{
+    float: left;
+    padding: 0.5rem;
+    background: black;
+    color: brown;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.logo a{
+    text-decoration: none;
+    color: brown;
+}
+nav ul{
+    margin:0px;
+    padding: 0px;
+    list-style-type: none;
+}
+nav li{
+    float: right;
+
+}
+#solo{
+    display: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    text-transform: uppercase;
+
+}
+main{
+    display: grid;
+}
+.showcase{
+    min-height: 400px;
+    text-align: center;
+    position: relative;
+   
+}
+#search-bar{
+    text-align: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    max-width: 100%;
+    min-height: 60px;
+    background: black;
+    padding: 1rem;
+    display: none;
+    box-shadow: 1px 1px 5px black;
+   
+    
+   
+}
+
+#search{
+    border:none;
+    background: black;
+    font-size: 1.5rem;
+    width: 90%;
+    color: white;
+   
+    
+}
+
+.resume{
+    margin: 6rem;
+}
+.btn{
+    margin-top: 3rem;
+}
+
+.btn a{
+    padding:1rem 1.5rem;
+    color: white;
+    border: none;
+    transition: 0.7s ease-in-out;
+    color: white;
+    text-decoration: none;
+    background-color: maroon;
+    margin-right: 0.8rem;
+    
+
+}
+.btn a:hover{
+    background: brown;
+
+}
+.vid{
+    width: 100%;
+    min-height: 400px;
+    position: absolute;
+    background-image: url('../img/basil-delicious-food-459469.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 80%;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+.section-a{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    margin: 1rem;
+   
+}
+.section-a img{
+    width: 100%;
+    min-height: 300px;
+}
+.box{
+    border: none;
+    background:  #fff;
+    padding: 0.4rem 0.4rem 1rem 0.4rem;
+    text-align: center;
+    
+    
+    
+}
+.explication{
+    display: flex;
+    flex-direction: column;
+}
+.box a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.7rem;
+    background: brown;
+    color: white;
+   
+}
+.box a:hover{
+    box-shadow: 1px 1px 6px black;
+}
+.section-b{
+    display: grid;
+    grid-template-areas: "health-img recet recet";
+    grid-gap: 1rem;
+    margin: 2.5rem 1rem;
+   padding: 0.8;
+
+}
+.health-img{
+    grid-area: health-img;
+
+
+
+}
+.health-img img{
+    width: 100%;
+    max-height: 350px;
+}
+.recet{
+    grid-area: recet;
+    display: flex;
+    flex-direction: column;
+}
+.recet a{
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    padding: 0.7rem;
+    background-color: forestgreen;
+    width: 100px;
+    margin-top: 0.8rem;
+}
+/* rersponsive bar bav*/
+
+.window{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: brown;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    z-index: 1;
+    display: none;
+    
+}
+
+.window a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: black;
+    font-size: 1.3rem;
+
+}
+/*animation*/
+.section-c{
+    margin-top: 6rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background:#2F4F4F;
+   
+
+    
+}
+.rate{
+    margin-right: 1.5rem;
+    text-align: center;
+}
+.rate .fa{
+    font-size: 3rem;
+}
+.fa-list-alt{
+    animation-name: dor;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+    color: white;
+}
+ .fa-heartbeat{
+    animation-name: bravHeart;
+    animation-duration: 0.5s;
+    color: red;
+    animation-iteration-count: infinite; 
+}
+.fa-flask{
+    animation-name: splitFlask;
+    animation-duration: 1s;
+    color: red;
+    animation-iteration-count: infinite; 
+    color: green;
+}
+@keyframes dor{
+    0%{transform:rotateY(0deg) }
+    50% {transform: rotateY(100deg); }
+    50% {transform: rotateY(180deg); }
+}
+@keyframes bravHeart{
+    100%{transform:scale(1.5) }
+    
+
+}
+@keyframes splitFlask{
+    100%{transform: rotate(90deg);}
+    
+
+}
+
+
+.rate p{
+    font-size: 1.5rem;
+    font-style: weight;
+    margin-top: 0.5rem;
+    color: white;
+}
+/*footer*/
+footer{
+    background: brown;
+    text-align: center;
+    min-height: 80px;
+    padding: 2rem;
+}
+
+
+
+
+@media(max-width:800px){
+
+#solo{
+    display: block;
+}
+.combine{
+  display: none;
+
+}
+.resume{
+    margin: 1rem;
+}
+.btn a{
+    display: block;
+    width: 100%;
+    margin-top: 0.6rem;
+    padding: 0.6rem;
+}
+.btn{
+    margin-top: 0.8rem;
+}
+.section-b{
+    grid-template-areas: "health-img " "recet ";
+}
+.recet a {
+    display: block;
+    width: 100%;
+    text-align: center;
+   
+  
+}
+.section-c{
+    display: none;
+}
+
+.window{
+    display: block;
+    }
+    
+
+}
+
+
+
+

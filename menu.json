@@ -1,0 +1,24 @@
+[
+    {
+        "reciptName" : "pizza",
+        "component" :"aghabahb,hdgde ,ijudei",
+        "how":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, expedita facere eaque veniam numquam quasi cupiditate? Illum, at? Quisquam esse id eum nostrum animi, illo natus cum rerum consequuntur ab. Recusandae repudiandae nostrum neque deserunt eos voluptas, atque deleniti amet?!",
+        "image":"img/bite-cheese-cooking-710916.jpg"
+
+    },
+    {
+        "reciptName" : "soup",
+        "component" :"aghabahb,hdgde ,ijudei",
+        "how":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, expedita facere eaque veniam numquam quasi cupiditate? Illum, at? Quisquam esse id eum nostrum animi, illo natus cum rerum consequuntur ab. Recusandae repudiandae nostrum neque deserunt eos voluptas, atque deleniti amet?",
+        "image":"img/bamboo-bamboo-whisk-board-461428.jpg"
+
+    },
+    {
+        "reciptName" : "cack",
+        "component" :"aghabahb,hdgde ,ijudei",
+        "how":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, expedita facere eaque veniam numquam quasi cupiditate? Illum, at? Quisquam esse id eum nostrum animi, illo natus cum rerum consequuntur ab. Recusandae repudiandae nostrum neque deserunt eos voluptas, atque deleniti amet?!",
+        "image":"img/cake-chocolate-chocolate-cake-132694.jpg"
+
+    }
+
+]
